@@ -16,18 +16,18 @@ const Navbar = () => {
   ];
 
   return (
-    <header className="bg-white shadow-md fixed w-full top-0 left-0 z-50">
+    <header className="bg-white shadow-md  w-full top-0 left-0 z-50">
       <div className="max-w-7xl mx-auto flex justify-between items-center px-5 py-3">
         {/* Logo */}
         <NavLink to="/" className="flex items-center gap-2">
           <img
-            src="tnp logo.png"
-            alt="RGPV Logo"
-            className="w-12"
-          />
+           src="tnp logo.png" 
+           alt="RGPV Logo" 
+           className="w-12" 
+           />
         </NavLink>
 
-      {/* left section */}
+        {/* left section */}
         <nav className="hidden md:flex items-center gap-8">
           {menuItems.map((item) => (
             <NavLink
@@ -51,7 +51,6 @@ const Navbar = () => {
           <IoNotifications className="cursor-pointer hover:text-red-600" />
           <FaUserCircle className="cursor-pointer hover:text-red-600" />
 
-     
           <button
             className="md:hidden text-2xl"
             onClick={() => setIsOpen(!isOpen)}

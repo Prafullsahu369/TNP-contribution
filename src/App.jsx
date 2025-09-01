@@ -12,7 +12,7 @@ function App() {
   return (
    <>
      <Navbar/>
-      <div className="min-h-screen bg-gray-50 pt-6 px-4">
+      <div className="min-h-screen bg-gray-100 pt-6 px-4">
         <Routes>
           <Route path="/" element={<Dashboard />} />
           <Route path="/performance" element={<Performance />} />
